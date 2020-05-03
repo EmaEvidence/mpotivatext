@@ -1,0 +1,27 @@
+{
+  "name": "motivate",
+  "version": "1.0",
+  "description": "Allow users enter todos for the day and enter possible distracting urls, whenever the enter the url redirect them to their goals",
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": ["activeTab", "declarativeContent", "storage", "tabs"],
+  "browser_action": {
+    "default_icon": {
+      "16": "images/logo.png",
+      "32": "images/logo1.png",
+      "48": "images/logo2.png",
+      "128": "images/logo3.png"
+    },
+    "default_popup": "popup.html"
+   },
+  "options_page": "options.html",
+  "icons": {
+    "16": "images/logo.png",
+    "32": "images/logo1.png",
+    "48": "images/logo2.png",
+    "128": "images/logo3.png"
+  }
+}
